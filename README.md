@@ -12,3 +12,8 @@ With time the components will be replace will full Blazor Components.
 * CI/CD with gitLab
     * CI build and run tests
     * When merged to 'github' branch, the CI/CD should push the branch to GitHub
+
+
+#Screenshots
+* Dashboard
+* ![alt text](http://aboimpinto.ddns.net/esqueleto/material-dashboard-blazor/blob/master/Screenshots/materialDashbard.png "Logo Title Text 1")
