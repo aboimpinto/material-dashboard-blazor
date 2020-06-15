@@ -16,4 +16,4 @@ With time the components will be replace will full Blazor Components.
 
 #Screenshots
 * Dashboard
-* ![alt text](http://aboimpinto.ddns.net/esqueleto/material-dashboard-blazor/blob/master/Screenshots/materialDashbard.png "Logo Title Text 1")
+* ![Dashboard](http://aboimpinto.ddns.net/esqueleto/material-dashboard-blazor/blob/master/Screenshots/materialDashbard.png "Dashboard")
