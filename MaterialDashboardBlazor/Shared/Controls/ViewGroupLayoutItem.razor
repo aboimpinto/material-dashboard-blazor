@@ -1,0 +1,17 @@
+
+<div class="row">
+    @ChildContent
+</div>
+
+@code 
+{
+    [CascadingParameter] private ViewGroupLayout Parent { get; set; }
+
+    [Parameter]
+	public RenderFragment ChildContent { get; set; }
+
+    protected override void OnInitialized()
+    {
+        this.Parent.AddItem(this);
+    }
+}
