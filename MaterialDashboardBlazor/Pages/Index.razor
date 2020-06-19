@@ -4,19 +4,70 @@
 <ViewGroupLayout>
     <ViewGroupLayoutItem>
         <div class="col-lg-3 col-md-6 col-sm-6">
-            <Card />
+            <CardHeaderIcon 
+                CardType = "card-header-warning"
+                HeaderIconType = "material"
+                HeaderIcon = "content_copy"
+                Category = "Used Space">
+
+                <TitleContent>
+                    49/50<small>GB</small>
+                </TitleContent>
+
+                <FooterContent>
+                    <MaterialIcon Icon = "warning" />
+                    <a href="#pablo">Get More Space...</a>
+                </FooterContent>
+
+            </CardHeaderIcon>
         </div>
 
         <div class="col-lg-3 col-md-6 col-sm-6">
-            <Card />
+            <CardHeaderIcon 
+                CardType = "card-header-success"
+                HeaderIconType = "material"
+                HeaderIcon = "store"
+                Category = "Revenue">
+
+                <TitleContent>
+                    $34,245
+                </TitleContent>
+
+                <FooterContent><MaterialIcon Icon = "date_range" /> Last 24 Hours</FooterContent>
+
+            </CardHeaderIcon>
         </div>
 
         <div class="col-lg-3 col-md-6 col-sm-6">
-            <Card />
+            <CardHeaderIcon 
+                CardType = "card-header-danger"
+                HeaderIconType = "material"
+                HeaderIcon = "info_outline"
+                Category = "Fixed Issues">
+
+                <TitleContent>
+                    75
+                </TitleContent>
+
+                <FooterContent><MaterialIcon Icon = "local_offer" /> Tracked from Github</FooterContent>
+
+            </CardHeaderIcon>
         </div>
 
         <div class="col-lg-3 col-md-6 col-sm-6">
-            <Card />
+            <CardHeaderIcon 
+                CardType = "card-header-info"
+                HeaderIconType = "fontAwesome"
+                HeaderIcon = "twitter"
+                Category = "Followers">
+
+                <TitleContent>
+                    +245
+                </TitleContent>
+
+                <FooterContent><MaterialIcon Icon = "update" /> Just Updated</FooterContent>
+
+            </CardHeaderIcon>
         </div>
     </ViewGroupLayoutItem>
 

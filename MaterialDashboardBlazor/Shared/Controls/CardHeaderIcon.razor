@@ -1,0 +1,43 @@
+<div class="card card-stats">
+    <div class="card-header @this.CardType card-header-icon">
+        <div class="card-icon">
+            @if (this.HeaderIconType == "material")
+            {
+                <i class="material-icons">@this.HeaderIcon</i>
+            }
+            else if (this.HeaderIconType == "fontAwesome")
+            {
+                <i class="fa fa-@this.HeaderIcon"></i>
+            }
+            
+        </div>
+        <p class="card-category">@this.Category</p>
+        <h3 class="card-title">@this.TitleContent</h3>
+    </div>
+    <div class="card-footer">
+        <div class="stats">
+            @this.FooterContent
+        </div>
+    </div>
+</div>
+
+@code 
+{
+    [Parameter]
+    public string CardType { get; set; } = "card-header-warning";
+
+    [Parameter]
+    public string HeaderIconType { get; set; } = "material";
+
+    [Parameter]
+    public string HeaderIcon { get; set; } = "image";
+
+    [Parameter]
+    public string Category { get; set; } = "<category>";
+
+    [Parameter]
+    public RenderFragment TitleContent { get; set; }
+
+    [Parameter]
+    public RenderFragment FooterContent { get; set; }
+}
