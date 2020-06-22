@@ -1,15 +1,30 @@
 <div class="card card-chart">
-    <div class="card-header card-header-success">
+    <div class="card-header card-header-@this.HeaderType">
         <div class="ct-chart" id="dailySalesChart"></div>
     </div>
     <div class="card-body">
-        <h4 class="card-title">Daily Sales</h4>
+        <h4 class="card-title">@this.Title</h4>
         <p class="card-category">
-            <span class="text-success"><i class="fa fa-long-arrow-up"></i> 55% </span> increase in today sales.</p>
+            @this.DescriptionFrament
+        </p>
     </div>
     <div class="card-footer">
         <div class="stats">
-            <i class="material-icons">access_time</i> updated 4 minutes ago
+            @this.FooterFragment
         </div>
     </div>
 </div>
+
+@code {
+    [Parameter]
+    public string HeaderType { get; set; }
+
+    [Parameter]
+    public string Title  { get; set; }
+
+    [Parameter]
+    public RenderFragment DescriptionFrament { get; set; }
+
+    [Parameter]
+    public RenderFragment FooterFragment { get; set; }
+}

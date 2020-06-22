@@ -11,7 +11,7 @@
                 Category = "Used Space">
 
                 <TitleContent>
-                    49/50<small>GB</small>
+                    49/50 <small>GB</small>
                 </TitleContent>
 
                 <FooterContent>
@@ -73,15 +73,51 @@
 
     <ViewGroupLayoutItem>
         <div class="col-md-4">
-            <CardChart />
+            <CardChart 
+                HeaderType = "success"
+                Title = "Daily Sales">
+
+                <DescriptionFrament>
+                    <span class="text-success"><i class="fa fa-long-arrow-up"></i> 55% </span> increase in today sales.
+                </DescriptionFrament>
+
+                <FooterFragment>
+                    <i class="material-icons">access_time</i> updated 4 minutes ago
+                </FooterFragment>
+
+            </CardChart>
         </div>
 
         <div class="col-md-4">
-            <CardChart />
+            <CardChart 
+                HeaderType="warning"
+                Title = "Email Subscriptions">
+
+                <DescriptionFrament>
+                    Last Campaign Performance
+                </DescriptionFrament>
+
+                <FooterFragment>
+                    <i class="material-icons">access_time</i> updated 2 minutes ago
+                </FooterFragment>
+
+            </CardChart>
         </div>
         
         <div class="col-md-4">
-            <CardChart />
+            <CardChart 
+                HeaderType="danger"
+                Title = "Completed Tasks">
+
+                <DescriptionFrament>
+                    Last Campaign Performance
+                </DescriptionFrament>
+
+                <FooterFragment>
+                    <i class="material-icons">access_time</i> updated 2 minutes ago
+                </FooterFragment>
+
+            </CardChart>
         </div>
     </ViewGroupLayoutItem>
 
