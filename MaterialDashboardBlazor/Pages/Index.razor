@@ -1,5 +1,4 @@
-﻿
-@page "/"
+﻿@page "/"
 
 <ViewGroupLayout>
     <ViewGroupLayoutItem>
@@ -85,6 +84,9 @@
                     <i class="material-icons">access_time</i> updated 4 minutes ago
                 </FooterFragment>
 
+                <Chart>
+                    <div class="ct-chart" id="dailySalesChart"></div>
+                </Chart>
             </CardChart>
         </div>
 
@@ -101,6 +103,9 @@
                     <i class="material-icons">access_time</i> updated 2 minutes ago
                 </FooterFragment>
 
+                <Chart>
+                    <div class="ct-chart" id="websiteViewsChart"></div>
+                </Chart>
             </CardChart>
         </div>
         
@@ -117,11 +122,18 @@
                     <i class="material-icons">access_time</i> updated 2 minutes ago
                 </FooterFragment>
 
+                <Chart>
+                    <div class="ct-chart" id="completedTasksChart"></div>
+                </Chart>
             </CardChart>
         </div>
     </ViewGroupLayoutItem>
 
 </ViewGroupLayout>
+
+@code 
+{
+}
 
 @* <div class="container-fluid">
     <div class="row">

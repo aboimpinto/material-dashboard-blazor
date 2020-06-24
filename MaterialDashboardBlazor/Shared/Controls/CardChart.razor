@@ -1,6 +1,7 @@
 <div class="card card-chart">
     <div class="card-header card-header-@this.HeaderType">
-        <div class="ct-chart" id="dailySalesChart"></div>
+        @* <div class="ct-chart" id="dailySalesChart"></div> *@
+        @this.Chart
     </div>
     <div class="card-body">
         <h4 class="card-title">@this.Title</h4>
@@ -27,4 +28,7 @@
 
     [Parameter]
     public RenderFragment FooterFragment { get; set; }
+
+    [Parameter]
+    public RenderFragment Chart { get; set; }
 }
